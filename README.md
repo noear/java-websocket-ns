@@ -43,11 +43,8 @@ public class Demo01 {
 
         //开始连接
         client.connectBlocking(10, TimeUnit.SECONDS);
-        //定制心跳
-        client.heartbeatHandler(e -> {
-            e.sendPing();
-            System.out.println("jump");
-        });
+        //定制心跳（可选）
+        //client.heartbeatHandler(new HeartbeatHandlerDefault());
         //开始心跳 + 心跳时自动重连
         client.heartbeat(2_000, true);
 
