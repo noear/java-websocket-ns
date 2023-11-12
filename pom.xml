@@ -9,6 +9,10 @@
     <version>1.0</version>
     <packaging>jar</packaging>
 
+    <name>${project.artifactId}</name>
+    <description>Java project for java-websocket-ns</description>
+    <url>https://github.com/noear/java-websocket-ns</url>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
