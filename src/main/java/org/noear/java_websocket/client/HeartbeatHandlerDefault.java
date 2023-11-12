@@ -1,9 +1,11 @@
-package org.java_websocket.client;
+package org.noear.java_websocket.client;
 
 
-import org.java_websocket.utils.ConsumerEx;
+import org.noear.java_websocket.utils.ConsumerEx;
 
 /**
+ * 心跳默认处理
+ *
  * @author noear
  * @since 1.0
  */

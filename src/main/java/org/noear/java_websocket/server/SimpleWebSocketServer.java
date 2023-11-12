@@ -1,7 +1,8 @@
-package org.java_websocket.server;
+package org.noear.java_websocket.server;
 
 import org.java_websocket.WebSocket;
 import org.java_websocket.handshake.ClientHandshake;
+import org.java_websocket.server.WebSocketServer;
 
 import java.net.InetSocketAddress;
 

@@ -2,8 +2,8 @@ package demo;
 
 
 import org.java_websocket.WebSocket;
-import org.java_websocket.client.SimpleWebSocketClient;
-import org.java_websocket.server.SimpleWebSocketServer;
+import org.noear.java_websocket.client.SimpleWebSocketClient;
+import org.noear.java_websocket.server.SimpleWebSocketServer;
 
 import java.util.concurrent.TimeUnit;
 

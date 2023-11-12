@@ -1,8 +1,9 @@
-package org.java_websocket.client;
+package org.noear.java_websocket.client;
 
+import org.java_websocket.client.WebSocketClient;
 import org.java_websocket.handshake.ServerHandshake;
-import org.java_websocket.utils.ConsumerEx;
-import org.java_websocket.utils.RunUtils;
+import org.noear.java_websocket.utils.ConsumerEx;
+import org.noear.java_websocket.utils.RunUtils;
 
 import java.net.URI;
 import java.util.concurrent.ScheduledFuture;

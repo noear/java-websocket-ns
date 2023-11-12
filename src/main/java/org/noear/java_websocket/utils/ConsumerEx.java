@@ -1,4 +1,4 @@
-package org.java_websocket.utils;
+package org.noear.java_websocket.utils;
 
 /**
  * @author noear
