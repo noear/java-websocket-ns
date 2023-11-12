@@ -1,7 +1,7 @@
 # java-websocket-ns
 
 
-org.java-websocket 是优化的框架，只加了小点便利功能：简化，心跳，自动重连，心跳定制
+org.java-websocket 是优秀的框架。在此基础，加了点小便利：简化，心跳，自动重连，心跳定制
 
 
 * 引入依赖
