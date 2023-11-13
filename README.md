@@ -21,6 +21,7 @@ public class Demo01 {
     public static void main(String[] args) throws Exception {
         //::启动服务端
         SimpleWebSocketServer server = new SimpleWebSocketServer(18080){
+            //需要什么方法，就重写什么
             @Override
             public void onMessage(WebSocket conn, String message) {
                 System.out.println(message);
@@ -35,6 +36,7 @@ public class Demo01 {
 
         //::启动客户端
         SimpleWebSocketClient client = new SimpleWebSocketClient("ws://127.0.0.1:18080") {
+            //需要什么方法，就重写什么
             @Override
             public void onMessage(String message) {
                 super.onMessage(message);
