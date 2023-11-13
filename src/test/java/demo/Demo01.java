@@ -39,7 +39,7 @@ public class Demo01 {
             System.out.println("jump");
         });
         //开始心跳 + 心跳时自动重连
-        client.heartbeat(2_000, true);
+        client.heartbeat(20_000, true);
 
         //发送测试
         client.send("test");

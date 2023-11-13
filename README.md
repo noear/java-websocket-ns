@@ -46,7 +46,7 @@ public class Demo01 {
         //定制心跳（可选）
         //client.heartbeatHandler(new HeartbeatHandlerDefault());
         //开始心跳 + 心跳时自动重连
-        client.heartbeat(2_000, true);
+        client.heartbeat(20_000, true);
 
         //发送测试
         client.send("test");
