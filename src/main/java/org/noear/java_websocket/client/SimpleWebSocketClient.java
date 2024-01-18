@@ -88,22 +88,12 @@ public class SimpleWebSocketClient extends WebSocketClient {
         }
     }
 
-    @Override
-    public void close() {
-        heartbeatFutureStop();
-        super.close();
-    }
-
-    @Override
-    public void close(int code) {
-        heartbeatFutureStop();
-        super.close(code);
-    }
-
-    @Override
-    public void close(int code, String message) {
-        heartbeatFutureStop();
-        super.close(code, message);
+    /**
+     * 释放
+     * */
+    public void release(){
+        this.heartbeatFutureStop();
+        this.close();
     }
 
     @Override

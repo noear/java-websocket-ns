@@ -35,7 +35,13 @@ public class Demo01 {
         client.connectBlocking(10, TimeUnit.SECONDS);
         //定制心跳
         client.heartbeatHandler(e -> {
-            e.sendPing();
+            if (e.isClosed()) {
+                if (e.isAutoReconnect()) {
+                    e.reconnect();
+                }
+            } else {
+                e.sendPing();
+            }
             System.out.println("jump");
         });
         //开始心跳 + 心跳时自动重连

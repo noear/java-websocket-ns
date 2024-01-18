@@ -14,7 +14,7 @@ public class HeartbeatHandlerDefault implements ConsumerEx<SimpleWebSocketClient
     public void accept(SimpleWebSocketClient client) throws Exception{
         if (client.isClosed()) {
             if (client.isAutoReconnect()) {
-                client.reconnectBlocking();
+                client.reconnect();
             }
         } else {
             client.sendPing();
