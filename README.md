@@ -10,7 +10,7 @@ org.java-websocket 是优秀的框架。在此基础，加了点小便利：简�
 <dependency>
     <groupId>org.noear</groupId>
     <artifactId>java-websocket-ns</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
 </dependency>
 ```
 
