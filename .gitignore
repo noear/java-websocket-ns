@@ -17,6 +17,7 @@ target/
 *.log
 *.flattened-pom.xml
 
+
 ### NetBeans ###
 nbproject/private/
 build/
