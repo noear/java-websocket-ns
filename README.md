@@ -16,6 +16,8 @@ org.java-websocket 是优秀的框架。在此基础，加了点小便利：简�
 
 * 代码示例
 
+提醒：客户端的关闭使用 `release()` 替代 `close()`。`release()` 会同时停止心跳与自动重连！
+
 ```java
 public class Demo01 {
     public static void main(String[] args) throws Exception {

@@ -54,7 +54,7 @@ public class Demo01 {
         Thread.sleep(1000);
 
         //关闭
-        client.close();
+        client.release();
         server.stop();
     }
 }
